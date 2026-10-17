@@ -3,7 +3,7 @@ name: Build Full Installer ISO/DMG image
 on:
   workflow_dispatch:
     inputs:
-      macos_version:
+      macos_version: 'Ventura'
         description: "Choose a macOS version to build."
         required: true
         type: choice
@@ -24,7 +24,7 @@ on:
           - 'Mavericks'
           - 'Mountain Lion'
           - 'Lion'
-      image_format:
+      image_format: 'iso'
         description: "Choose 'iso' for virtual machines, 'dmg' for flash to USB drive."
         required: true
         type: choice
